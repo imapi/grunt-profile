@@ -1,7 +1,7 @@
 {
   "name": "grunt-profile",
   "description": "Environment configurations for grunt",
-  "version": "0.4.2",
+  "version": "1.0.0",
   "homepage": "https://github.com/imapi/grunt-profile",
   "author": {
     "name": "Ivan Bondarenko",
