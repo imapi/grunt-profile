@@ -1,0 +1,35 @@
+{
+  "name": "grunt-profile",
+  "description": "Environment configurations for grunt",
+  "version": "0.4.2",
+  "homepage": "https://github.com/imapi/grunt-profile",
+  "author": {
+    "name": "Ivan Bondarenko",
+    "email": "bondarenko.ivan.v@gmail.com",
+    "url": "https://github.com/imapi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imapi/grunt-profile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imapi/grunt-profile/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/imapi/grunt-profile/master/LICENSE"
+    }
+  ],
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "profile",
+    "environment"
+  ],
+  "dependencies": {
+    "lodash": "~2.4.1"
+  }
+}
