@@ -7,22 +7,8 @@
       return grunt.config('profile.current');
     };
 
-    function setProfile(profile) {
-      if (profile) {
-        grunt.config('profile.current', profile);
-        grunt.log.ok("Current profile: " + profile);
-        return true;
-      }
-      return false;
-    }
-
-    function switchTo(profile) {
-      setProfile(profile) && updateGruntfile();
-    }
-
-    function updateGruntfile() {
+    function updateGruntfile(profile) {
       initialConf || (initialConf = _.cloneDeep(grunt.config.getRaw()));
-      var profile = grunt.profile();
       grunt.config.init(_.cloneDeep(initialConf));
       var merge = function (node, key) {
         if (_.isObject(node)) {
@@ -35,6 +21,17 @@
         }
       };
       merge(grunt.config.getRaw());
+      return true;
+    }
+
+    function setProfile(profile) {
+      grunt.config('profile.current', profile);
+      grunt.log.ok("Current profile: " + profile);
+      return true;
+    }
+
+    function switchTo(profile) {
+      updateGruntfile(profile) && setProfile(profile);
     }
 
     _.each(grunt.config('profile.profiles'), function (profile) {
