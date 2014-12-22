@@ -3,7 +3,7 @@
 
 [![Gittip](https://img.shields.io/gratipay/imapi.svg)](https://gratipay.com/imapi/)
 
-[![NPM](https://nodei.co/npm/grunt-environment.png?downloads=true)](https://nodei.co/npm/grunt-profile/)
+[![NPM](https://nodei.co/npm/grunt-profile.png?downloads=true)](https://nodei.co/npm/grunt-profile/)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
